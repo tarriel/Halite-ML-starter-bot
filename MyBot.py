@@ -3,6 +3,8 @@ import os
 import sys
 import numpy as np
 
+os.environ["TF_CPP_MIN_LOG_LEVEL"]="2" # supress most messages from tensorflow
+
 VISIBLE_DISTANCE = 4
 input_dim=4*(2*VISIBLE_DISTANCE+1)*(2*VISIBLE_DISTANCE+1)
 
